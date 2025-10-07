@@ -1,0 +1,36 @@
+{
+  "$schema": "https://flagd.dev/schema/v0/flags.json",
+  "flags": {
+    "basic-feature-toggle": {
+      "state": "ENABLED",
+      "variants": {
+        "on": true,
+        "off": false
+      },
+      "defaultVariant": "off"
+    },
+    "personalized-greeting": {
+      "state": "ENABLED",
+      "variants": {
+        "hello": "Hello!",
+        "welcome": "Welcome!",
+        "hi": "Hi there!"
+      },
+      "defaultVariant": "hello",
+      "targeting": [
+        {
+          "if": {
+            "user_country": "US"
+          },
+          "variant": "welcome"
+        },
+        {
+          "if": {
+            "user_segment": "premium"
+          },
+          "variant": "hi"
+        }
+      ]
+    }
+  }
+}
