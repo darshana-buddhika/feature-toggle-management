@@ -2,10 +2,11 @@
   "$schema" : "https://flagd.dev/schema/v0/flags.json",
   "flags" : {
     "basic-feature-toggle" : {
-      "state" : "DIABLE",
+      "state" : "DISABLE",
       "defaultVariant" : "off",
       "variants" : {
-        "on" : "ON"
+        "on" : "ON",
+        "off" : "OFF"
       },
       "targeting" : [ ]
     },
