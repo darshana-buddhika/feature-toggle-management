@@ -5,7 +5,8 @@
       "state" : "ENABLED",
       "defaultVariant" : "on",
       "variants" : {
-        "on" : "ON"
+        "on" : true,
+        "off" : false
       },
       "targeting" : {
         "if" : [ {
