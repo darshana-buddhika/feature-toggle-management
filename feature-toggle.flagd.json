@@ -7,7 +7,13 @@
       "variants" : {
         "on" : "ON"
       },
-      "targeting" : { }
+      "targeting" : {
+        "if" : [ {
+          "==" : [ {
+            "var" : [ "color" ]
+          }, "yellow" ]
+        }, "on", "off" ]
+      }
     },
     "isColorGreen" : {
       "state" : "ENABLED",
