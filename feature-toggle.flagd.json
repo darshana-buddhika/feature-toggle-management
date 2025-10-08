@@ -1,36 +1,33 @@
 {
-  "$schema": "https://flagd.dev/schema/v0/flags.json",
-  "flags": {
-    "basic-feature-toggle": {
-      "state": "ENABLED",
-      "variants": {
-        "on": true,
-        "off": false
+  "$schema" : "https://flagd.dev/schema/v0/flags.json",
+  "flags" : {
+    "basic-feature-toggle" : {
+      "state" : "DIABLE",
+      "defaultVariant" : "off",
+      "variants" : {
+        "on" : "ON"
       },
-      "defaultVariant": "off"
+      "targeting" : [ ]
     },
-    "personalized-greeting": {
-      "state": "ENABLED",
-      "variants": {
-        "hello": "Hello!",
-        "welcome": "Welcome!",
-        "hi": "Hi there!"
+    "personalized-greeting" : {
+      "state" : "ENABLED",
+      "defaultVariant" : "hello",
+      "variants" : {
+        "hello" : "Hello!",
+        "welcome" : "Welcome!",
+        "hi" : "Hi there!"
       },
-      "defaultVariant": "hello",
-      "targeting": [
-        {
-          "if": {
-            "user_country": "US"
-          },
-          "variant": "welcome"
+      "targeting" : [ {
+        "if" : {
+          "user_country" : "US"
         },
-        {
-          "if": {
-            "user_segment": "premium"
-          },
-          "variant": "hi"
-        }
-      ]
+        "variant" : "welcome"
+      }, {
+        "if" : {
+          "user_segment" : "premium"
+        },
+        "variant" : "hi"
+      } ]
     }
   }
 }
