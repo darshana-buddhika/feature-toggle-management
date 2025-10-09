@@ -14,7 +14,8 @@
             "var" : [ "color" ]
           }, "yellow" ]
         }, "on", "off" ]
-      }
+      },
+      "metadata" : null
     },
     "isColorGreen" : {
       "state" : "ENABLED",
@@ -29,7 +30,8 @@
             "var" : [ "color" ]
           }, "yellow" ]
         }, "on", "off" ]
-      }
+      },
+      "metadata" : null
     }
   }
 }
