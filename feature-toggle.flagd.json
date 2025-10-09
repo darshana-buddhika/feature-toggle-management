@@ -14,8 +14,7 @@
             "var" : [ "color" ]
           }, "yellow" ]
         }, "on", "off" ]
-      },
-      "metadata" : null
+      }
     },
     "isColorGreen" : {
       "state" : "ENABLED",
@@ -30,8 +29,7 @@
             "var" : [ "color" ]
           }, "yellow" ]
         }, "on", "off" ]
-      },
-      "metadata" : null
+      }
     },
     "FT:Test" : {
       "state" : "ENABLED",
@@ -46,8 +44,22 @@
             "var" : [ "color" ]
           }, "yellow" ]
         }, "on", "off" ]
+      }
+    },
+    "FT:Test2" : {
+      "state" : "ENABLED",
+      "defaultVariant" : "on",
+      "variants" : {
+        "on" : true,
+        "off" : false
       },
-      "metadata" : null
+      "targeting" : {
+        "if" : [ {
+          "==" : [ {
+            "var" : [ "color" ]
+          }, "yellow" ]
+        }, "on", "off" ]
+      }
     }
   }
 }
