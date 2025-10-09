@@ -32,6 +32,22 @@
         }, "on", "off" ]
       },
       "metadata" : null
+    },
+    "FT:Test" : {
+      "state" : "ENABLED",
+      "defaultVariant" : "on",
+      "variants" : {
+        "on" : true,
+        "off" : false
+      },
+      "targeting" : {
+        "if" : [ {
+          "==" : [ {
+            "var" : [ "color" ]
+          }, "yellow" ]
+        }, "on", "off" ]
+      },
+      "metadata" : null
     }
   }
 }
